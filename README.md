@@ -1,5 +1,6 @@
 # Week4 (3)
 
+- ### Week1-2 [Resourse GitLAB](https://gitlab.com/ZenasChiu/Week1_project)
 - ### Week3 bulid a Spring boot Java login api with database
   - Development tools : Intellij + mySQL database
   
@@ -46,6 +47,8 @@ Mainly different concept of OOP
       - where autolog while tracker the Startpoint and Endpoint
 
 ### @ Spring Annotation
+[30天帶你潮玩Spring Boot Zone系列 第 1 篇 - Spring Boot 是什麼 ](https://ithelp.ithome.com.tw/articles/10213097)
+
 #### Main Practice of create a user loginSystem 
 [My project(GitHub)](https://github.com/ZenasChiu/Quiz3)
 
@@ -80,8 +83,28 @@ For RESTapi:
 
 
 ## Week 4 KotLin
-set variable
+Different with JAVA
+- set Variable : 
+  - Var : changable Variable
+  - Val : Only Read
+      ```
+      var {data_name} : Data_type = {data}
+      {data_name} = {new data}
+  
+      val {data_name} : Data_type = {data}
+      Can't --> {data_name} = {new data}
+      ```
 
-
-
-
+- set Control flow :
+  - when like Switch(JAVA)
+    ```
+       val button = "A"
+       println( 
+       when(button){
+       "A" -> "Yes"
+       "B" -> "NO"
+       "X" -> "Menu"
+       "Y" -> "Nothing"
+       else -> "There is no such button"})
+    ```
+- 
