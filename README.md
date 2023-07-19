@@ -4,16 +4,16 @@
 Spring --> Framework (sets of rulse)
 Spring boot help solving the dependency problem
 
-### @IoC 
+### @ IoC 
 where scan and create a set of "Service"/"Dependency" Bean(class) that required to use after in the controller first
 - Flexable 
 - Not bulid-in
 
-### @Dependency Injection
+### @ Dependency Injection
 Get and inject the Bean(class) from controller to required class to use
 - Changeable while runtime
 
-### @AOP
+### @ AOP
 Mainly different concept of OOP
 - OOP using to - Redundant / + Reusable, Code development divide and manage
 - AOP using to adding consistent program base on time flow
@@ -24,7 +24,7 @@ Mainly different concept of OOP
     - AOP : adding a annotation and detect by Spring AOP 
       - where autolog while tracker the Startpoint and Endpoint
 
-### @Spring Annotation
+### @ Spring Annotation
 #### Main Practice of create a user loginSystem 
 For starting scan:
 - @SpringBootApplication
