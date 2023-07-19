@@ -1,2 +1,5 @@
 # week4_Kotlin
-Learning process of week4
+Recording learning process of week4
+
+Please open brenches for more, Thanks
+
