@@ -155,7 +155,7 @@ Task :
     - [x] Auth
     - [x] Test
   - [ ] Repository
-    - [x] 
+    - [x] UserRepository
   
 - *Function* 
   - /auth/
