@@ -14,6 +14,7 @@
   - Login : JWT Token 
     - [什麼是JWT？認識 JSON Web Token 認證機制](https://tw.alphacamp.co/blog/jwt-json-web-token)
     - [Medium 透過 JWT 實作驗證機制 ](https://medium.com/%E9%BA%A5%E5%85%8B%E7%9A%84%E5%8D%8A%E8%B7%AF%E5%87%BA%E5%AE%B6%E7%AD%86%E8%A8%98/%E7%AD%86%E8%A8%98-%E9%80%8F%E9%81%8E-jwt-%E5%AF%A6%E4%BD%9C%E9%A9%97%E8%AD%89%E6%A9%9F%E5%88%B6-2e64d72594f8)
+    - [Day 29 - Spring Boot 想要資料令牌要先帶來!－ JWT ](https://ithelp.ithome.com.tw/articles/10250968)
     
   
 ## Week 3 Spring information : 
@@ -108,3 +109,61 @@ Different with JAVA
        else -> "There is no such button"})
     ```
 - 
+
+# System Rebuild with KOTLIN : 
+[AWS 什麼是 RESTful API？](https://aws.amazon.com/tw/what-is/restful-api/)
+
+[My Project Link](https://github.com/ZenasChiu/KotlinQuiz3/tree/W4D4)
+
+
+Rebulid with 
+- [ ] Kotlin + spring boot
+  - source :[]() 
+- [ ] Hibernate instruction
+  - source :[]() 
+- [ ] JWT token
+  - source :[]() 
+- [ ] Aes 256 for password
+  - source :[]() 
+- [ ] AOP :
+  - source :[Declear cut point](https://docs.spring.io/spring-framework/reference/core/aop/ataspectj/pointcuts.html)
+- [ ] MD5
+  - source :[]()
+
+Task : 
+- *Package.Class*
+  - [ ] Service 
+    - [x] Auth
+    - [x] Test
+  - [x] Entity / Component
+
+    - [x] Users
+      - id long 20 no null Key auto_increment 
+      - email string 50 UNI key
+      - password string 120
+      - username string 20 UNI key
+
+    - [x] Roles
+      - id int 11 no null key auto_increment
+      - name string 20 
+
+    - [x] User_Roles
+      - user_id long 20 key 
+      - role_id int 11 key 
+
+  - [ ] Controller 
+    - [x] Auth
+    - [x] Test
+  - [ ] Repository
+    - [x] 
+  
+- *Function* 
+  - /auth/
+    - [ ] signin
+    - [x] signup
+    - [ ] signout
+  - /test/
+    - [ ] all
+    - [ ] user
+    - [ ] mod
+    - [ ] admin
