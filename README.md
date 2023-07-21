@@ -113,21 +113,21 @@ Different with JAVA
 # System Rebuild with KOTLIN : 
 [AWS 什麼是 RESTful API？](https://aws.amazon.com/tw/what-is/restful-api/)
 
-[My Project Link](https://github.com/ZenasChiu/KotlinQuiz3/tree/W4D4)
+[My Project Link](https://github.com/ZenasChiu/KotlinQuiz3/tree/W4D5)
 
 
 Rebulid with 
-- [ ] Kotlin + spring boot
+- [x] Kotlin + spring boot
   - source :[]() 
 - [ ] Hibernate instruction
   - source :[]() 
-- [ ] JWT token
+- [x] JWT token
   - source :[]() 
 - [ ] Aes 256 for password
   - source :[]() 
 - [ ] AOP :
   - source :[Declear cut point](https://docs.spring.io/spring-framework/reference/core/aop/ataspectj/pointcuts.html)
-- [ ] MD5
+- [x] MD5
   - source :[]()
 
 Task : 
@@ -159,11 +159,49 @@ Task :
   
 - *Function* 
   - /auth/
-    - [ ] signin
+    - [x] signin
     - [x] signup
-    - [ ] signout
+    - [ ] signout --> where i find out that Postman can't re
   - /test/
     - [ ] all
     - [ ] user
     - [ ] mod
     - [ ] admin
+
+
+## W4D5 Hibernate 
+Usage : from /create / set / update database before / while the runtime 
+
+DAO 
+DTO
+
+@ Table(name ={table name})
+class xxx(){}
+
+@ 
+element
+
+@ Lob
+using on getter/ setter
+
+@ OrderBy
+
+##### jdbcTemplate [menu](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/jdbc/core/JdbcTemplate.html)
+.query
+.queryForStream
+.execute
+.
+
+##### annotation that table calling other table
+- @ OneToOne(cascade = CascadeType.MERGE)
+- @ OneToMany(cascade = CascadeType.MERGE)
+- @ PrimaryKeyJoinColumn              --> use as sharing the primary key
+- @ JoinColumn(name = {column name})  --> use as sharing the column to other table
+
+
+##### About Cascade 瀑布
+Customer -- adding --> Address
+- { CascadeType.ALL } specifies that when a Customer is created.
+- { CascadeType.PERSIST } if there is any Address association, then that Address will be created as well. 
+- { CascadeType.REMOVE } If the Customer is deleted from persistence storage, the Address table will be deleted. 
+- { CascadeType.MERGE } If a Customer instance is reattached to persistence storage, any changes to the Address collection will be merged with persistence storage. 
